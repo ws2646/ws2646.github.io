@@ -5,6 +5,16 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
+# Welcome to my website!
+
+![](image/graduation.jpg)
+
+## Introduction about myself
+
+Hi! My name is Weize Sun, and you can call me Vivian. I graduated from University of Iowa with a BA Biology degree, and now I am a student in Columbia University Biostatistics MS program.
+
+For more information, you can click on *resume* and *My Github* on the top right and get to know more about me! :)
+
+Feel free to email me with any question!

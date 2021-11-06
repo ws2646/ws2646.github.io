@@ -1,0 +1,14 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: cv.pdf
+    - text: "Email Me"
+      href: mailto:<ws2646@cumc.columbia.edu>
+    - text: "My Github"
+      href: http://github.com/<ws2646>/
+output:
+  html_document:
+    theme: cerulean
