@@ -1,0 +1,52 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+data("instacart")
+
+```
+
+## Number of items ordered in each aisle
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+scatter_df = 
+  instacart %>% 
+  count(aisle, name = "number_of_items") %>% 
+  filter(number_of_items > 10000) %>% 
+  plot_ly(x = ~number_of_items, y = ~aisle, type = "scatter", mode = "markers")
+scatter_df
+```
+
+## How many orders were made in each hour of a day
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+hour_plot = 
+  count(instacart, order_hour_of_day) %>% 
+  plot_ly(x = ~order_hour_of_day, y = ~n, type = "bar", color = "viridis") 
+hour_plot
+```
+
+## How many orders were made in each day of week 
+
+In this graph, I randomly selected three departments: beverages, dairy eggs, and produce.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+department_dow_plot = 
+  instacart %>% 
+  select(department, order_dow) %>% 
+  group_by(department, order_dow) %>%
+  summarize(order_times = n()) %>% 
+  plot_ly(y = ~order_times, color = ~department, type = "box", colors = "viridis")
+department_dow_plot
+```
+

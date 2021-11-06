@@ -9,12 +9,21 @@ output:
 
 # Welcome to my website!
 
-![](image/graduation.jpg)
+<img src="image/graduation.jpg" style="width:80%">
+
+
 
 ## Introduction about myself
 
 Hi! My name is Weize Sun, and you can call me Vivian. I graduated from University of Iowa with a BA Biology degree, and now I am a student in Columbia University Biostatistics MS program.
 
-For more information, you can click on *resume* and *My Github* on the top right and get to know more about me! :)
+For more information, you can click on **Resume** and **My Github** on the top right and get to know more about me! :)
 
 Feel free to email me with any question!
+
+
+## Other useful links
+[Google](http://google.com)
+
+[My publication](https://doi.org/10.1167/tvst.9.1.1)
+
