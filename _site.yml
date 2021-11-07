@@ -2,6 +2,9 @@ name: "Yay internet!"
 output_dir: "."
 navbar:
   title: "Home"
+  left:
+    - text: "Dashbord"
+      href: dashbord.html
   right:
     - text: "Resume"
       href: cv.pdf

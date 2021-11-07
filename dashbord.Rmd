@@ -1,23 +1,27 @@
 ---
-title: "Plotly"
+title: "Dashbord"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
 ---
 
-```{r setup}
+```{r setup, include=FALSE}
+library(flexdashboard)
+
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
-
 ```{r echo = FALSE, message = FALSE, warning = FALSE}
 data("instacart")
 
 ```
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-## Number of items ordered in each aisle
+### Chart A
 
 ```{r}
 scatter_df = 
@@ -28,7 +32,11 @@ scatter_df =
 scatter_df
 ```
 
-## How many orders were made in each hour of a day
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
 ```{r}
 hour_plot = 
   count(instacart, order_hour_of_day) %>% 
@@ -36,9 +44,7 @@ hour_plot =
 hour_plot
 ```
 
-## How many orders were made in each day of week 
-
-In this graph, I randomly selected three departments: beverages, dairy eggs, and produce.
+### Chart C
 
 ```{r}
 department_dow_plot = 

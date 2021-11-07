@@ -22,8 +22,18 @@ For more information, you can click on **Resume** and **My Github** on the top r
 Feel free to email me with any question!
 
 
+## Data Analysis
+
+I did data analysis on Instacart. Instacart is an online grocery service that allows you to shop online from local stores. In New York City, partner stores include Whole Foods, Fairway, and The Food Emporium. Instacart offers same-day delivery, and items that users purchase are delivered within 2 hours.
+
+If you want to check my plots, click on **Dashbord** on the top left. If you want to see my analysis process, click on **plotly** on the top right.
+
+
+
 ## Other useful links
 [Google](http://google.com)
 
 [My publication](https://doi.org/10.1167/tvst.9.1.1)
+
+[My Linkedin page](https://www.linkedin.com/in/weize-sun-7196431a9/)
 
